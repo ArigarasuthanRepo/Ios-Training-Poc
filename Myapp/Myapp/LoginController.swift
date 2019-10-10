@@ -23,6 +23,10 @@ class LoginController: UIViewController {
             let alert = UIAlertController(title:"Success",message:"Login Successfull",preferredStyle:.alert)
             alert.addAction(UIAlertAction(title:"Okay",style: .default,handler: nil))
             self.present(alert,animated: true)
+            
+            UserDefaults.standard.set(email.text!,forKey: "UserEmail")
+//            let loginUser = UserDefaults.standard.string(forKey: "UserEmail")
+//            print("Success Register",loginUser)
         }
         
     }

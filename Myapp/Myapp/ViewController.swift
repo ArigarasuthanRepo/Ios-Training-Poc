@@ -10,23 +10,25 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    
-//    @IBAction func register(_ sender: Any) {
-//         let registerVC = RegisterController()
-//        let navigationController = UINavigationController(rootViewController: self)
-//        self.navigationController?.pushViewController(RegisterController(), animated: false)
-//        navigateToMain()
-        
-//        show(RegisterController(), sender: self)
-        
+
     @IBAction func login(_ sender: Any) {
            print("Called Login")
     }
     //    }
 
     @IBAction func register(_ sender: Any) {
-        print("Called Register")
-        navigateToMain()
+        let loginUser = UserDefaults.standard.string(forKey: "UserEmail")
+        print("Called Register",loginUser)
+         navigateToMain()
+//        if(loginUser != ""){
+//            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//              let mainNav = storyboard.instantiateViewController(withIdentifier: "NavigationController")
+//              self.navigationController?.pushViewController(mainNav, animated: true)
+//        }else{
+//            navigateToMain()
+//        }
+
+        
     }
     
     override func viewDidLoad() {
@@ -34,6 +36,18 @@ class ViewController: UIViewController {
         print("Called viewDidload VC")
         navigationItem.title="Login & Register"
         navigationController?.navigationBar.isTranslucent=false
+        
+        let loginUser = UserDefaults.standard.string(forKey: "UserEmail")
+        print("Called Register",loginUser)
+        if(loginUser != ""){
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+              let mainNav = storyboard.instantiateViewController(withIdentifier: "NavigationController")
+              self.navigationController?.pushViewController(mainNav, animated: true)
+        }else{
+             let storyboard = UIStoryboard(name: "Main", bundle: nil)
+             let mainNav = storyboard.instantiateViewController(withIdentifier: "ViewController")
+             self.navigationController?.pushViewController(mainNav, animated: true)
+        }
 
     }
     

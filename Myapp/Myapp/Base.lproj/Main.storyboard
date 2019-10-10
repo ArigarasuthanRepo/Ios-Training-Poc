@@ -201,6 +201,57 @@
             </objects>
             <point key="canvasLocation" x="2013" y="-3013"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="BTG-5N-sea">
+            <objects>
+                <viewController storyboardIdentifier="NavigationController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="RfI-ov-8Fp" customClass="NavigationController" customModule="Myapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hm4-de-ylf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jBU-dH-ik2">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="DashBoard" id="Q5O-b0-XSo"/>
+                                </items>
+                            </navigationBar>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qiS-no-ofj">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mjR-o2-YKz">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                                        <color key="backgroundColor" red="0.49662109377414976" green="0.37234145788688733" blue="0.63529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1000" id="Vgo-di-hN7"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="mjR-o2-YKz" secondAttribute="trailing" id="0Mr-cK-E7F"/>
+                                    <constraint firstItem="mjR-o2-YKz" firstAttribute="leading" secondItem="qiS-no-ofj" secondAttribute="leading" id="PSZ-JE-7bm"/>
+                                    <constraint firstAttribute="bottom" secondItem="mjR-o2-YKz" secondAttribute="bottom" id="bKc-Xz-sN3"/>
+                                    <constraint firstItem="mjR-o2-YKz" firstAttribute="top" secondItem="qiS-no-ofj" secondAttribute="top" id="dNE-d4-TW8"/>
+                                    <constraint firstItem="mjR-o2-YKz" firstAttribute="width" secondItem="qiS-no-ofj" secondAttribute="width" id="mPV-dd-eQq"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="jBU-dH-ik2" firstAttribute="top" secondItem="4gD-AM-0GF" secondAttribute="top" id="0Jc-nB-TQj"/>
+                            <constraint firstItem="jBU-dH-ik2" firstAttribute="leading" secondItem="4gD-AM-0GF" secondAttribute="leading" id="Mej-nb-hRN"/>
+                            <constraint firstItem="qiS-no-ofj" firstAttribute="top" secondItem="jBU-dH-ik2" secondAttribute="bottom" id="Ur1-lK-6MO"/>
+                            <constraint firstItem="qiS-no-ofj" firstAttribute="trailing" secondItem="4gD-AM-0GF" secondAttribute="trailing" id="Xuq-He-Enm"/>
+                            <constraint firstItem="jBU-dH-ik2" firstAttribute="trailing" secondItem="4gD-AM-0GF" secondAttribute="trailing" id="l03-82-fqB"/>
+                            <constraint firstItem="qiS-no-ofj" firstAttribute="bottom" secondItem="4gD-AM-0GF" secondAttribute="bottom" id="qz0-Bl-xlP"/>
+                            <constraint firstItem="qiS-no-ofj" firstAttribute="leading" secondItem="4gD-AM-0GF" secondAttribute="leading" id="reM-Xs-Lp8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4gD-AM-0GF"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cdF-Ge-bP6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2808.6956521739135" y="-3012.0535714285711"/>
+        </scene>
         <!--Register Controller-->
         <scene sceneID="7So-ah-DP7">
             <objects>
@@ -411,7 +462,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="registerr" width="213" height="90"/>
+        <image name="registerr" width="213" height="90.5"/>
         <image name="registration" width="292.5" height="120"/>
     </resources>
 </document>
