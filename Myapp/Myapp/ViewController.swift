@@ -26,25 +26,43 @@ class ViewController: UIViewController {
 
     @IBAction func register(_ sender: Any) {
         print("Called Register")
-//        self.navigationController?.pushViewController(RegisterController(), animated: true)
-
-         show(RegisterController(), sender: self)
+        navigateToMain()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("Called viewDidload VC")
         navigationItem.title="Login & Register"
         navigationController?.navigationBar.isTranslucent=false
 
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        print("Called viewWillAppear VC")
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        print("Called viewDidAppear VC")
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        print("Called viewWillDisappear VC")
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        print("Clled ViewDidDisappear VC")
+    }
+    
     private func navigateToMain(){
-        print("Called navigateToMain")
-        let mainStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-        
-        let mainNavigation = mainStoryboard.instantiateViewController(withIdentifier:"RegisterController") as! RegisterController
-        
-        present(mainNavigation, animated: true, completion: nil)
+//        print("Called navigateToMain")
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let mainNav = storyboard.instantiateViewController(withIdentifier: "RegisterController")
+        self.navigationController?.pushViewController(mainNav, animated: true)
+//        present(mainNav,animated: false,completion: nil)
     }
 
 

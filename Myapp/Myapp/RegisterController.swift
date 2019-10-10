@@ -55,8 +55,9 @@ class RegisterController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("HIIIII")
-        self.view.backgroundColor = .white
-        self.definesPresentationContext = true 
+
+//        self.view.backgroundColor = .white
+//        self.definesPresentationContext = true
 //        name.placeholder="Enter your name"
 
         // Do any additional setup after loading the view.
