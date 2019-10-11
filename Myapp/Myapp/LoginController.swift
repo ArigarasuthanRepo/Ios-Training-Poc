@@ -13,6 +13,11 @@ class LoginController: UIViewController {
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var email: UITextField!
     
+    var regEmail = ""
+    
+    var registerController:RegisterController?
+
+    
     @IBAction func login(_ sender: Any) {
         if(password.text!.count == 0 || email.text!.count == 0){
             let alert = UIAlertController(title:"Info",message:"Please fill this field",preferredStyle:.alert)
@@ -25,15 +30,19 @@ class LoginController: UIViewController {
             self.present(alert,animated: true)
             
             UserDefaults.standard.set(email.text!,forKey: "UserEmail")
+//            self.nameText = password.text!
+//            performSegue(withIdentifier: "login", sender: self)
+            
 //            let loginUser = UserDefaults.standard.string(forKey: "UserEmail")
 //            print("Success Register",loginUser)
+//            self.navigationController?.popToRootViewController(animated: true)
         }
         
     }
     override func viewDidLoad() {
         print("Called viewDidLoad")
         super.viewDidLoad()
-
+        email.text = regEmail
         // Do any additional setup after loading the view.
     }
     
@@ -57,6 +66,10 @@ class LoginController: UIViewController {
         print("Clled ViewDidDisappear")
     }
     
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        let vc = segue.destination as! RegisterController
+//        vc.userEmail = self.nameText
+//    }
 
     /*
     // MARK: - Navigation

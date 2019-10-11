@@ -20,9 +20,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        window = UIWindow(frame: UIScreen.main.bounds)
 //        window?.makeKeyAndVisible()
 //
-//        let viewController = ViewController()
+//        let viewController = NavigationController()
 //        let navController = UINavigationController(rootViewController: viewController)
 //        window?.rootViewController = navController
+    
+
+//        Manually Set the rootviewController code
+        
+//            self.window = UIWindow(frame: UIScreen.main.bounds)
+//            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//            let mainNav = storyboard.instantiateViewController(withIdentifier: "NavigationController")
+//            self.window?.rootViewController = mainNav
+//
+//            self.window?.makeKeyAndVisible()
         
         return true
     }
