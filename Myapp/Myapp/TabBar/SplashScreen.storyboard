@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GDt-nY-4fk">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash Controller-->
+        <scene sceneID="eto-wp-orf">
+            <objects>
+                <viewController storyboardIdentifier="SplashController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="GDt-nY-4fk" customClass="SplashController" customModule="Myapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uL6-xF-3ej">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreen-Center" translatesAutoresizingMaskIntoConstraints="NO" id="vjz-sD-SoI">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" red="0.49662109380000002" green="0.37234145790000001" blue="0.63529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="vjz-sD-SoI" firstAttribute="leading" secondItem="yIy-67-xhW" secondAttribute="leading" id="C6m-VI-4SX"/>
+                            <constraint firstItem="vjz-sD-SoI" firstAttribute="trailing" secondItem="yIy-67-xhW" secondAttribute="trailing" id="G0F-vT-wGh"/>
+                            <constraint firstItem="vjz-sD-SoI" firstAttribute="top" secondItem="yIy-67-xhW" secondAttribute="top" id="sJI-9o-QIP"/>
+                            <constraint firstItem="yIy-67-xhW" firstAttribute="bottom" secondItem="vjz-sD-SoI" secondAttribute="bottom" id="xRD-3p-ETw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yIy-67-xhW"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3eo-CB-Otq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="44.927536231884062" y="-123.21428571428571"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LaunchScreen-Center" width="384" height="512"/>
+    </resources>
+</document>
