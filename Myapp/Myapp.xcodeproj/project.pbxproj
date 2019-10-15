@@ -20,7 +20,6 @@
 		78117C8A23460EFA001BF78D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78117C8923460EFA001BF78D /* Assets.xcassets */; };
 		78117C8D23460EFA001BF78D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78117C8B23460EFA001BF78D /* LaunchScreen.storyboard */; };
 		78117C9823460EFB001BF78D /* MyappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78117C9723460EFB001BF78D /* MyappTests.swift */; };
-		78A4A27F234C6C430053FACA /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A4A27E234C6C430053FACA /* NavigationController.swift */; };
 		8411587323560CC900EB12AD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8411586723560CC900EB12AD /* HomeViewController.swift */; };
 		8411587423560CC900EB12AD /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8411586823560CC900EB12AD /* ShareViewController.swift */; };
 		8411587523560CC900EB12AD /* FollowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8411586923560CC900EB12AD /* FollowViewController.swift */; };
@@ -63,7 +62,6 @@
 		78117C9323460EFB001BF78D /* MyappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		78117C9723460EFB001BF78D /* MyappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyappTests.swift; sourceTree = "<group>"; };
 		78117C9923460EFB001BF78D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		78A4A27E234C6C430053FACA /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		8411586723560CC900EB12AD /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8411586823560CC900EB12AD /* ShareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
 		8411586923560CC900EB12AD /* FollowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowViewController.swift; sourceTree = "<group>"; };
@@ -136,7 +134,6 @@
 				780141A1234B20A000E7582F /* RegisterController.swift */,
 				8411587E23560CD200EB12AD /* Defaults.swift */,
 				78117C8623460EEC001BF78D /* Main.storyboard */,
-				78A4A27E234C6C430053FACA /* NavigationController.swift */,
 				78117C8923460EFA001BF78D /* Assets.xcassets */,
 				78117C8B23460EFA001BF78D /* LaunchScreen.storyboard */,
 				78117C8E23460EFA001BF78D /* Info.plist */,
@@ -300,7 +297,6 @@
 				78117C8123460EEB001BF78D /* AppDelegate.swift in Sources */,
 				780141A4234B4EF400E7582F /* Validation.swift in Sources */,
 				8411587723560CC900EB12AD /* TabBarViewController.swift in Sources */,
-				78A4A27F234C6C430053FACA /* NavigationController.swift in Sources */,
 				8411587823560CC900EB12AD /* TabViewController.swift in Sources */,
 				78117C8323460EEB001BF78D /* SceneDelegate.swift in Sources */,
 			);
