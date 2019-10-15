@@ -32,6 +32,7 @@
 		8411587C23560CC900EB12AD /* FollowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8411587123560CC900EB12AD /* FollowViewController.swift */; };
 		8411587D23560CC900EB12AD /* SplashController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8411587223560CC900EB12AD /* SplashController.swift */; };
 		8411587F23560CD200EB12AD /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8411587E23560CD200EB12AD /* Defaults.swift */; };
+		841158812356108F00EB12AD /* DshboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841158802356108F00EB12AD /* DshboardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		8411587123560CC900EB12AD /* FollowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowViewController.swift; sourceTree = "<group>"; };
 		8411587223560CC900EB12AD /* SplashController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashController.swift; sourceTree = "<group>"; };
 		8411587E23560CD200EB12AD /* Defaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
+		841158802356108F00EB12AD /* DshboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DshboardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 				780141A5234B6E0200E7582F /* LoginController.swift */,
 				780141A3234B4EF400E7582F /* Validation.swift */,
 				780141A1234B20A000E7582F /* RegisterController.swift */,
+				841158802356108F00EB12AD /* DshboardViewController.swift */,
 				8411587E23560CD200EB12AD /* Defaults.swift */,
 				78117C8623460EEC001BF78D /* Main.storyboard */,
 				78117C8923460EFA001BF78D /* Assets.xcassets */,
@@ -290,6 +293,7 @@
 				8411587923560CC900EB12AD /* HomeViewController.swift in Sources */,
 				8411587B23560CC900EB12AD /* ShareViewController.swift in Sources */,
 				8411587D23560CC900EB12AD /* SplashController.swift in Sources */,
+				841158812356108F00EB12AD /* DshboardViewController.swift in Sources */,
 				780141A6234B6E0200E7582F /* LoginController.swift in Sources */,
 				8411587F23560CD200EB12AD /* Defaults.swift in Sources */,
 				78117C8523460EEB001BF78D /* ViewController.swift in Sources */,
