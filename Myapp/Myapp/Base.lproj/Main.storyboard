@@ -201,10 +201,10 @@
             </objects>
             <point key="canvasLocation" x="2013" y="-3013"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Tab View Controller-->
         <scene sceneID="BTG-5N-sea">
             <objects>
-                <viewController storyboardIdentifier="NavigationController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="RfI-ov-8Fp" customClass="NavigationController" customModule="Myapp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TabViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="RfI-ov-8Fp" customClass="TabViewController" customModule="Myapp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hm4-de-ylf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

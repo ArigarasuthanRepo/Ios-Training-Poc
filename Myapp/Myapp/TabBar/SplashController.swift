@@ -1,18 +1,18 @@
 //
-//  NavigationController.swift
+//  SplashController.swift
 //  Myapp
 //
-//  Created by Deemsys on 10/8/19.
+//  Created by Deemsys on 10/14/19.
 //  Copyright © 2019 deemsys. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
-class NavigationController: UIViewController {
-    
+class SplashController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
+
+
 }

@@ -16,23 +16,36 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
-//        window = UIWindow(frame: UIScreen.main.bounds)
-//        window?.makeKeyAndVisible()
-//
-//        let viewController = NavigationController()
-//        let navController = UINavigationController(rootViewController: viewController)
-//        window?.rootViewController = navController
     
-
+           Thread.sleep(forTimeInterval:1.0)
+        
 //        Manually Set the rootviewController code
         
+            self.window = UIWindow(frame: UIScreen.main.bounds)
+            let storyboard = UIStoryboard(name: "SplashScreen", bundle: nil)
+            let mainNav = storyboard.instantiateViewController(withIdentifier: "SplashController")
+            self.window?.rootViewController = mainNav
+            self.window?.makeKeyAndVisible()
+        
+        
+        
+//        let loginUser = UserDefaults.standard.string(forKey: "UserEmail")
+//        if(loginUser != ""){
+//            print("Navigation")
 //            self.window = UIWindow(frame: UIScreen.main.bounds)
 //            let storyboard = UIStoryboard(name: "Main", bundle: nil)
 //            let mainNav = storyboard.instantiateViewController(withIdentifier: "NavigationController")
 //            self.window?.rootViewController = mainNav
-//
 //            self.window?.makeKeyAndVisible()
+//        }
+//        else{
+//            print("!Navigation")
+//            self.window = UIWindow(frame: UIScreen.main.bounds)
+//            let storyboard = UIStoryboard(name: "SplashScreen", bundle: nil)
+//            let mainNav = storyboard.instantiateViewController(withIdentifier: "SplashController")
+//            self.window?.rootViewController = mainNav
+//            self.window?.makeKeyAndVisible()
+//        }
         
         return true
     }

@@ -28,8 +28,17 @@ class LoginController: UIViewController {
             let alert = UIAlertController(title:"Success",message:"Login Successfull",preferredStyle:.alert)
             alert.addAction(UIAlertAction(title:"Okay",style: .default,handler: nil))
             self.present(alert,animated: true)
+
+// User Default direct access:
+//            UserDefaults.standard.set(email.text!,forKey: "UserEmail")
             
-            UserDefaults.standard.set(email.text!,forKey: "UserEmail")
+// UserDefaults access from common file:
+            
+            UserDefaultsValue.saveUserData(value:email.text!, key: "UserEmail")
+            UserDefaultsValue.saveUserData(value:"Moni", key: "UserName")
+            
+            print("Namee :",UserDefaults.standard.string(forKey: "UserName")!)
+            
 //            self.nameText = password.text!
 //            performSegue(withIdentifier: "login", sender: self)
             

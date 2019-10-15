@@ -41,7 +41,7 @@ class ViewController: UIViewController {
         print("Called Register",loginUser)
         if(loginUser != ""){
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-              let mainNav = storyboard.instantiateViewController(withIdentifier: "NavigationController")
+              let mainNav = storyboard.instantiateViewController(withIdentifier: "TabViewController")
               self.navigationController?.pushViewController(mainNav, animated: true)
         }else{
              let storyboard = UIStoryboard(name: "Main", bundle: nil)
