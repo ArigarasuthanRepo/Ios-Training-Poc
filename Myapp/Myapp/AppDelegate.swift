@@ -21,11 +21,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
 //        Manually Set the rootviewController code
         
-            self.window = UIWindow(frame: UIScreen.main.bounds)
-            let storyboard = UIStoryboard(name: "SplashScreen", bundle: nil)
-            let mainNav = storyboard.instantiateViewController(withIdentifier: "SplashController")
-            self.window?.rootViewController = mainNav
-            self.window?.makeKeyAndVisible()
+//            self.window = UIWindow(frame: UIScreen.main.bounds)
+//            let storyboard = UIStoryboard(name: "SplashScreen", bundle: nil)
+//            let mainNav = storyboard.instantiateViewController(withIdentifier: "SplashController")
+//            self.window?.rootViewController = mainNav
+//            self.window?.makeKeyAndVisible()
         
         
         

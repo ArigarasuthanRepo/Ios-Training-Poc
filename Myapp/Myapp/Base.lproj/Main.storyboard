@@ -201,10 +201,10 @@
             </objects>
             <point key="canvasLocation" x="2013" y="-3013"/>
         </scene>
-        <!--Tab View Controller-->
+        <!--Dshboard View Controller-->
         <scene sceneID="BTG-5N-sea">
             <objects>
-                <viewController storyboardIdentifier="TabViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="RfI-ov-8Fp" customClass="TabViewController" customModule="Myapp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DshboardViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="RfI-ov-8Fp" customClass="DshboardViewController" customModule="Myapp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hm4-de-ylf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -220,9 +220,27 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mjR-o2-YKz">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LaO-6c-AqM">
+                                                <rect key="frame" x="127" y="100" width="160" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="160" id="JI3-1f-KzS"/>
+                                                    <constraint firstAttribute="height" constant="50" id="k5W-Oe-v1V"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <state key="normal" title="TabBar">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="tabBar:" destination="RfI-ov-8Fp" eventType="touchUpInside" id="Kv1-nk-dsM"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
                                         <color key="backgroundColor" red="0.49662109377414976" green="0.37234145788688733" blue="0.63529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
+                                            <constraint firstItem="LaO-6c-AqM" firstAttribute="top" secondItem="mjR-o2-YKz" secondAttribute="top" constant="100" id="0M8-nf-E1F"/>
                                             <constraint firstAttribute="height" constant="1000" id="Vgo-di-hN7"/>
+                                            <constraint firstItem="LaO-6c-AqM" firstAttribute="centerX" secondItem="mjR-o2-YKz" secondAttribute="centerX" id="lyT-kB-ToK"/>
                                         </constraints>
                                     </view>
                                 </subviews>
