@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--The List View Controller-->
+        <scene sceneID="HpD-mr-Yrd">
+            <objects>
+                <viewController storyboardIdentifier="TheListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="x8X-19-eXT" customClass="TheListViewController" customModule="Myapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dte-fO-f87">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="FNA-kN-waf">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bi1-XD-624">
+                                    <size key="itemSize" width="410" height="228"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collectionCell" id="z53-H8-baT" customClass="TheListViewCell" customModule="Myapp" customModuleProvider="target">
+                                        <rect key="frame" x="2" y="0.0" width="410" height="228"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="wuS-sG-9N9">
+                                            <rect key="frame" x="0.0" y="0.0" width="410" height="228"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thedarkknightrises" translatesAutoresizingMaskIntoConstraints="NO" id="FH8-z5-ITR">
+                                                    <rect key="frame" x="20" y="0.0" width="370" height="150"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="150" id="S47-Du-FOw"/>
+                                                        <constraint firstAttribute="height" constant="150" id="dAq-dQ-y8d"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Dark knight Rises" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BI5-Ii-ZTa">
+                                                    <rect key="frame" x="128" y="160" width="154.5" height="20.5"/>
+                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="17"/>
+                                                    <color key="textColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="BI5-Ii-ZTa" firstAttribute="centerX" secondItem="wuS-sG-9N9" secondAttribute="centerX" id="4x8-v3-mT5"/>
+                                                <constraint firstAttribute="trailing" secondItem="FH8-z5-ITR" secondAttribute="trailing" constant="20" id="60y-b9-yyt"/>
+                                                <constraint firstItem="BI5-Ii-ZTa" firstAttribute="top" secondItem="FH8-z5-ITR" secondAttribute="bottom" constant="10" id="J4f-WI-4R4"/>
+                                                <constraint firstItem="FH8-z5-ITR" firstAttribute="top" secondItem="wuS-sG-9N9" secondAttribute="top" id="tyH-ro-XBm"/>
+                                                <constraint firstItem="FH8-z5-ITR" firstAttribute="leading" secondItem="wuS-sG-9N9" secondAttribute="leading" constant="20" id="x3I-Yh-sL0"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="410" height="228"/>
+                                        <connections>
+                                            <outlet property="movieImage" destination="FH8-z5-ITR" id="OaI-IG-kC6"/>
+                                            <outlet property="movieName" destination="BI5-Ii-ZTa" id="gyy-s6-o2I"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="FNA-kN-waf" firstAttribute="top" secondItem="B32-oA-wLD" secondAttribute="top" id="KKW-5M-SnR"/>
+                            <constraint firstItem="FNA-kN-waf" firstAttribute="leading" secondItem="B32-oA-wLD" secondAttribute="leading" id="bDx-M5-IbF"/>
+                            <constraint firstAttribute="bottom" secondItem="FNA-kN-waf" secondAttribute="bottom" id="mBU-fG-Jks"/>
+                            <constraint firstItem="FNA-kN-waf" firstAttribute="trailing" secondItem="B32-oA-wLD" secondAttribute="trailing" id="nBj-Dm-EqJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="B32-oA-wLD"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="44G-HZ-apA"/>
+                    <connections>
+                        <outlet property="christopherMovies" destination="FNA-kN-waf" id="R0f-Gz-zvh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JS7-H0-JAa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1971.0144927536232" y="110.49107142857143"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="El7-mP-O2e">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CaJ-yR-H4o" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LDj-Oj-KOB">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="x8X-19-eXT" kind="relationship" relationship="rootViewController" id="rWS-XP-AWb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ix4-EJ-ME5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1060.8695652173915" y="110.49107142857143"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="thedarkknightrises" width="514.5" height="750"/>
+    </resources>
+</document>
